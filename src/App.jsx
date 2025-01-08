@@ -3,7 +3,8 @@ import "./App.css";
 import TodoInput from "./components/TodoInput";
 import React from "react";
 import TodoCompleted from "./components/TodoCompleted";
-
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import TodoInCompleted from "./components/TodoIncompleted";
 function App() {
   return (
     <Router>

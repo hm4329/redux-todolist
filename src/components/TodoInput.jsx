@@ -4,9 +4,9 @@ import { useDispatch } from "react-redux";
 const TodoInput = () => {
   const [input, setInput] = useState("");
   const dispatch = useDispatch();
-  const addTodo = (text) => ({
+  const addTodo = (todo) => ({
     type: "ADD_TODO",
-    payload: text,
+    payload: todo,
   });
   const genId = () => {
     let id = 3;

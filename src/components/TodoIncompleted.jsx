@@ -9,7 +9,7 @@ const TodoIncompleted = () => {
     <div>
       <ul>
         {todos
-          .filter((todo) => todo.id === false)
+          .filter((todo) => todo.completed === false)
           .map((todo) => (
             <Todo key={todo.id} todo={todo} />
           ))}
